@@ -29,6 +29,7 @@
                         clifford: '#da373d',
                         primary: '#FFDC26',
                         'primary-bg': '#F9DF8A',
+                        'header-bg': '#FFF9F4',
                         'bordercolor': '#E9E9E9',
 
                     },
@@ -50,17 +51,134 @@
 
         .secondary-font {
             font-family: "ADLaM Display", serif;
+            font-weight: 500;
 
         }
     </style>
 </head>
- <!-- use main and header (max-w-6xl) -->
-<body class="max-w-7xl mx-auto">
-    <header class="max-w-6xl mx-auto">
-        <nav class="">
+<!-- use main and header (max-w-6xl) -->
 
+<body class="max-w-7xl mx-auto font-primary">
+    <header class=" ">
+        <nav class="max-w-7xl mx-auto border border-primary lg:border-0 bg-header-bg ">
+            <div class="navbar max-w-6xl mx-auto  ">
+                <div class="navbar-start">
+                    <a href="" class="flex ga1 items-center"><img src="./images/logo-header.png" alt="" class="" width="30px"
+                            height="30px">
+                        <h3 class="font-semibold text-2xl flex items-center mt-1">Browse<span class="text-primary">4</span>Pets</h3>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="flex gap-8">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <!-- menu itmes -->
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <img src="./images/icons8-menu.gif" alt="" class="">
+                        <img src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="" class="">
+                    </div>
+
+                    <div class="dropdown dropdown-end hidden md:inline">
+                        <!-- Alert button  -->
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <img src="https://img.icons8.com/material-outlined/24/appointment-reminders--v1.png" alt="" class="">
+                                <span class="badge badge-sm indicator-item">1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search button  -->
+                    <button class="btn btn-ghost btn-circle hidden md:inline ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-auto" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="border border-primary py-1 px-3 rounded-xl font-semibold hidden lg:inline mx-1">Log In</button>
+                    <button class="border-0 bg-primary py-1 px-3 rounded-xl font-semibold hidden lg:inline mx-1">Registar</button>
+
+                </div>
+            </div>
         </nav>
+
     </header>
+    <main class="max-w-6xl mx-auto">
+        <!-- hero section  -->
+         <section class="mb-28"></section>
+         <!-- Browse by catagory  -->
+          <section class="my-28">
+            <h3 class="secondary-font text-2xl mx-2 my-6 lg:mx0">Browse By Categories</h3>
+            <!-- Browse card -->
+             <div class="grid grid-cols-2 gap-3 mx-2 md:grid-cols-3 lg:grid-cols-6 lg:mx-0">
+                <!-- card-1  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/dog-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Dog</h4>
+                        <p class="text-center">5 itmes</p>
+                      </div>
+                 </div>
+                <!-- card-2  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/fish-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Fish</h4>
+                        <p class="text-center">12 itmes</p>
+                      </div>
+                 </div>
+                <!-- card-3  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/cat-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Cat</h4>
+                        <p class="text-center">24 itmes</p>
+                      </div>
+                 </div>
+                <!-- card-4  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/bird-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Bird</h4>
+                        <p class="text-center">7 itmes</p>
+                      </div>
+                 </div>
+                <!-- card-5  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/mouse-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Smell Pet</h4>
+                        <p class="text-center">4 itmes</p>
+                      </div>
+                 </div>
+                <!-- card-6  -->
+                 <div class="bg-primary-bg rounded-xl flex flex-col items-center">
+                    <!-- image content  -->
+                     <div class="bg-white rounded-[100%] h-20 w-20 flex justify-center my-3 p-3"><img src="./images/rabbit-cartoon.png" alt="" class=" "></div>
+                     <!-- text contetn  -->
+                      <div class="my-3">
+                        <h4 class="secondary-font text-center">Rabbit</h4>
+                        <p class="text-center">1 itmes</p>
+                      </div>
+                 </div>
+             </div>
+          </section>
+          
+    </main>
 </body>
 
 </html>
