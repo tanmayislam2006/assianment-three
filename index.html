@@ -55,6 +55,32 @@
             font-weight: 500;
 
         }
+        @keyframes charging {
+            0% {
+                width: 0%;
+                background: red;
+            }
+            25% {
+                width: 25%;
+                background: orange;
+            }
+            50% {
+                width: 50%;
+                background: yellow;
+            }
+            75% {
+                width: 75%;
+                background: #d7fc03;
+            }
+            100% {
+                width: 100%;
+                background: green;
+            }
+        }
+
+        .charging-bar {
+            animation: charging 20s linear infinite;
+        }
     </style>
 </head>
 <!-- use main and header (max-w-6xl) -->
@@ -110,7 +136,10 @@
         </nav>
 
     </header>
-    <main class="max-w-6xl mx-auto">
+    <main class="max-w-6xl mx-auto mt-3">
+        <div class="w-full h-20  relative mx-2 lg:mx-0 ">
+            <div class="absolute top-1/2 left-0 h-3/4 transform -translate-y-1/2 bg-red rounded-md charging-bar"></div>
+        </div>
         <!-- hero section  -->
         <section class="my-28 md:mt-12">
             <!-- hero section content  -->
